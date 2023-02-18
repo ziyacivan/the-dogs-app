@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 // Dogs API Key
-const DOGS_API_KEY = 'ftS2bqIJFWbKAR1a7rtEck2acToqU6VA';
+const DOGS_API_KEY = process.env.REACT_APP_DOGS_API_KEY || '';
 
 // Interface
 interface Breed {
